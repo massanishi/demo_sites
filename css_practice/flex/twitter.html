@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flex </title>
+    <style>
+    ul {
+        list-style: none;
+    }
+    
+    .tweet .content,
+    .tweet .reply {
+        padding-left: 70px;
+    }
+    
+    .content > img {
+        position: absolute;
+        margin-left: -60px;
+    }
+    
+    .content > time:first-of-type {
+        position: absolute;
+        margin-top: -2.5em;
+        margin-left: 30em;
+    }
+    
+    .content > * {
+        padding: .25em 0;
+    }
+    
+    .actions,
+    li.people,
+    .meta,
+    .people > ul {
+        display: flex;
+    }
+    
+    .meta .retweets,
+    .meta .favorites {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    img {
+        height: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="tweet">
+        <div class="content">
+            <img src="dog.jpg" />
+            <h2>Aaron Gustafson <span>@AaronGustafson</span></h2>
+            <time>12h</time>
+            <p>
+                Smartphone Browser localStorage is up to 5x Faster than N…
+                <a href="/">mobify.com/blog/smartphon ...</a>
+            </p>
+            <ul class="actions">
+                <li><a href="">Collapse</a></li>
+                <li><a href="">Reply</a></li>
+                <li><a href="">Retweet</a></li>
+                <li><a href="">Favorite</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+            <ul class="meta">
+                <li class="retweets"><span>7</span><span>RETWEETS</span></li>
+                <li class="favorites"><span>5</span><span>FAVORITES</span></li>
+                <li class="people">
+                    <ul class="people">
+                        <li><img src='dog.jpg' /> </li>
+                        <li><img src='dog.jpg' /> </li>
+                        <li><img src='dog.jpg' /> </li>
+                        <li><img src='dog.jpg' /> </li>
+                        <li><img src='dog.jpg' /> </li>
+                    </ul>
+                </li>
+            </ul>
+            <time>4:35 AM - 24 May 13</time>
+        </div>
+        <div class="reply">
+            <div contenteditable="true">
+                Reply to <span>@Aaron</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
