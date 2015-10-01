@@ -5,41 +5,50 @@
     <meta charset="UTF-8">
     <title>Flex </title>
     <style>
-    .flex {
+    .products {
         display: flex;
+        flex-flow: row;
+        /*align-items: center;*/
+        justify-content: center;
     }
     
-    .flex > * {
-        min-width: 100px;
-        min-height: 100px;
+    .products > div {
+        border: 1px black solid;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
-    
-    header {
-        background: rgba(200, 200, 200, 1);
+
+    .products > div:nth-child(2){
+        margin: 0 2em;
     }
-    
-    article {
-        background: rgba(200, 200, 200, .8);
+
+    img{
+        height: 100px;
     }
-    
-    aside {
-        background: rgba(200, 200, 200, .6);
-    }
-    
-    footer {
-        background: rgba(200, 200, 200, .4);
-    }
-    
-    header {}
     </style>
 </head>
 
 <body>
-    <div class="flex">
-        <header></header>
-        <article></article>
-        <aside></aside>
-        <footer></footer>
+    <div class="products">
+        <div>
+            <img src="dog.jpg"></img>
+            <h2><a href="">Basecamp</a></h2>
+            <h3>Manage Projects</h3>
+            <p>Used by millions for product management.</p>
+        </div>
+        <div>
+            <img src="dog.jpg"></img>
+            <h2><a href="">Highrise</a></h2>
+            <h3><a href="">Manage Contacts</a></h3>
+            <p>Know the people you do business with.</p>
+        </div>
+        <div>
+            <img src="dog.jpg"></img>
+            <h2><a href="">Campfire</a></h2>
+            <h3>Work in Real-Time</h3>
+            <p>Group chat rooms for your business.</p>
+        </div>
     </div>
 </body>
 
