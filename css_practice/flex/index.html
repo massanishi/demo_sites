@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flex </title>
+    <style>
+    .flex {
+        display: flex;
+    }
+    
+    .flex > * {
+        min-width: 100px;
+        min-height: 100px;
+    }
+    
+    header {
+        background: rgba(200, 200, 200, 1);
+    }
+    
+    article {
+        background: rgba(200, 200, 200, .8);
+    }
+    
+    aside {
+        background: rgba(200, 200, 200, .6);
+    }
+    
+    footer {
+        background: rgba(200, 200, 200, .4);
+    }
+    
+    header {}
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <header></header>
+        <article></article>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
